@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.calendario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+}
+
+.dia {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.dia-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.event {
+    background-color: #ffcc00;
+    padding: 2px;
+    border-radius: 3px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.lesson {
+    background-color: #b3e6ff;
+}
+
+.test {
+    background-color: #ffb3b3;
+}
+
+#event-form {
+    margin-top: 20px;
+}
+
+#event-form input[type="text"],
+#event-form input[type="date"],
+#event-form select {
+    margin-right: 10px;
+}
+
